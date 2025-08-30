@@ -4,965 +4,265 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>HOW XI Dashboard</title>
+    <title>Page</title>
 </head>
 
 <body>
 
-    <div class="top-container">
-
-        <div class="nav">
-            <div class="logo">
-                <i class='bx bxl-codepen'></i>
-                <a href="#">UNIVERSIDADE</a>
-            </div>
-
-            <div class="nav-links">
-                <a href="#">Dashboard</a>
-                <a href="#">Estadísticas</a>
-                <a href="#">Cursos</a>
-               
-            </div>
-
-            <div class="right-section">
-                <i class='bx bx-bell'></i>
-                <i class='bx bx-search'></i>
-
-                <div class="profile">
-                    <div class="info">
-                        <img src="C:\Users\camil\OneDrive\Escritorio\4th semester\gestao\profile-avatar-png-6.png">
-                        <div>
-                            <a href="#">João Da silva</a>
-                            <p>Estudante</p>
-                        </div>
-                    </div>
-                    <i class='bx bx-chevron-down'></i>
-                </div>
-            </div>
-
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>Sign Up</button>
+            </form>
         </div>
-
-        <div class="status">
-            <div class="header">
-                <h4 id="big">Seus cursos</h4>
-                <h4 id="small">Atividade da semana</h4>
-            </div>
-
-            <div class="items-list">
-                <div class="item">
-                    <div class="info">
-                        <div>
-                            <h5>Data Analysis</h5>
-                            <p>- 3 Aulas pendentes</p>
-                            <p>- 1 Projeto pendente</p>
-                        </div>
-                        <i class='bx bx-data'></i>
-                    </div>
-                    <div class="progress">
-                        <div class="bar"></div>
-                    </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>LOGIN</h1>
+                <div class="social-icons">
+                    
                 </div>
-                <div class="item">
-                    <div class="info">
-                        <div>
-                            <h5>Machine Learn</h5>
-                            <p>- 2 Trabalhos pendentes</p>
-                            <p>- 5 Aulas pendentes</p>
-                        </div>
-                        <i class='bx bx-terminal'></i>
-                    </div>
-                    <div class="progress">
-                        <div class="bar"></div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="info">
-                        <div>
-                            <h5>Python</h5>
-                            <p>- 4 Aulas pendentes</p>
-                            <p>- 8 Tarefas pendentes</p>
-                        </div>
-                        <i class='bx bxl-python'></i>
-                    </div>
-                    <div class="progress">
-                        <div class="bar"></div>
-                    </div>
-                </div>
-                <div class="item">
-                    <canvas class="activity-chart"></canvas>
-                </div>
-            </div>
-
+                
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Senha">
+                <a href="#">Esqueci minha senha</a>
+                <a href="file:///C:/Users/camil/OneDrive/Escritorio/4th%20semester/HOW%20I/HOWI.html" target="_blank" style="background-color: #050380; color: #fff; font-size: 12px; padding: 10px 45px; border: 1px solid transparent; border-radius: 8px; font-weight: 600; letter-spacing: 0.5px;text-transform: uppercase; margin-top: 10px; cursor: pointer;">ENTRAR</a>
+            </form>
         </div>
-
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Bem-vindo</h1>
+                    <p>Registre-se com seus dados pessoais para usar todos os recursos do site.</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Bem-vindo</h1>
+                    <p>Registre-se com seus dados pessoais para usar todos os recursos do site.</p>
+                
+                </div>
+            </div>
+        </div>
     </div>
 
-
-    <div class="bottom-container">
-
-        <div class="prog-status">
-            <div class="header">
-                <h4>Processo do aprendizado</h4>
-                <div class="tabs">
-                    <a href="#" class="active">1A</a>
-                    <a href="#">6M</a>
-                    <a href="#">3M</a>
-                </div>
-            </div>
-
-            <div class="details">
-                <div class="item">
-                    <h2>3.45</h2>
-                    <p>GPA Atual</p>
-                </div>
-                <div class="separator"></div>
-                <div class="item">
-                    <h2>4.78</h2>
-                    <p>Média da classe GPA</p>
-                </div>
-            </div>
-
-            <canvas class="prog-chart"></canvas>
-
-        </div>
-
-        <div class="popular">
-            <div class="header">
-                <h4>Webconferência</h4>
-                <a href="#"># Data</a>
-            </div>
-
-            <img src="C:\Users\camil\OneDrive\Escritorio\4th semester\gestao\OIP.jpeg">
-            <div class="audio">
-                <i class='bx bx-podcast'></i>
-                <a href="#">Aula: Mastering Data Visualização</a>
-            </div>
-            <p>Aprenda a criar visualizações atraentes com dados..</p>
-            <div class="listen">
-                <div class="author">
-                    <img src="C:\Users\camil\OneDrive\Escritorio\4th semester\gestao\profile-avatar-png-6.png">
-                    <div>
-                        <a href="#">Natalia</a>
-                        <p>Data Analyst</p>
-                    </div>
-                </div>
-                <button>Assitir<i class='bx bx-right-arrow-alt'></i></button>
-            </div>
-
-        </div>
-
-
-        <div class="upcoming">
-
-            <div class="header">
-                <h4>Calendario</h4>
-                <a href="#">Julio <i class='bx bx-chevron-down'></i></a>
-            </div>
-
-            <div class="dates">
-                <div class="item">
-                    <h5>Seg</h5>
-                    <a href="#">12</a>
-                </div>
-                <div class="item active">
-                    <h5>Ter</h5>
-                    <a href="#">13</a>
-                </div>
-                <div class="item">
-                    <h5>Qua</h5>
-                    <a href="#">14</a>
-                </div>
-                <div class="item">
-                    <h5>Qui</h5>
-                    <a href="#">15</a>
-                </div>
-                <div class="item">
-                    <h5>Sex</h5>
-                    <a href="#">16</a>
-                </div>
-                <div class="item">
-                    <h5>Sab</h5>
-                    <a href="#">17</a>
-                </div>
-                <div class="item">
-                    <h5>Dom</h5>
-                    <a href="#">18</a>
-                </div>
-            </div>
-
-            <div class="events">
-                <div class="item">
-                    <div>
-                        <i class='bx bx-time'></i>
-                        <div class="event-info">
-                            <a href="#">Data Science</a>
-                            <p>10:00-11:30</p>
-                        </div>
-                    </div>
-                    <i class='bx bx-dots-horizontal-rounded'></i>
-                </div>
-                <div class="item">
-                    <div>
-                        <i class='bx bx-time'></i>
-                        <div class="event-info">
-                            <a href="#">Machine Learning</a>
-                            <p>13:30-15:00</p>
-                        </div>
-                    </div>
-                    <i class='bx bx-dots-horizontal-rounded'></i>
-                </div>
-                <div class="item">
-                    <div>
-                        <i class='bx bx-time'></i>
-                        <div class="event-info">
-                            <a href="#">Programação com Python</a>
-                            <p>11:30-13:00</p>
-                        </div>
-                    </div>
-                    <i class='bx bx-dots-horizontal-rounded'></i>
-                </div>
-                <div class="item">
-                    <div>
-                        <i class='bx bx-time'></i>
-                        <div class="event-info">
-                            <a href="#">Introdução ao SQL</a>
-                            <p>17:00-1:30</p>
-                        </div>
-                    </div>
-                    <i class='bx bx-dots-horizontal-rounded'></i>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="script.js"></script>
-
+    
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
-
-a{
-    text-decoration: none;
-    color: #f1f3f2;
-    font-size: 14px;
-}
-
-canvas{
-    width: 100% !important;
-}
-
-img{
-    object-fit: cover;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body{
-    background: #f1f3f2;
-}
-
-.top-container{
-    background: #031224;
-    border-radius: 0 0 30px 30px;
-    padding-bottom: 10px;
-}
-
-.top-container .nav{
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px 20px 14px;
-    border-bottom: 2px solid #1e293b;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
 }
 
-.top-container .nav .logo{
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.top-container .nav .logo i{
-    color: #f1f3f2;
-    font-size: 24px;
-}
-
-.top-container .nav .logo a{
-    font-size: 16px;
-}
-
-.top-container .nav .nav-links{
-    display: flex;
-    gap: 20px;
-}
-
-.top-container .nav .nav-links a{
-    color: #ccc;
-    transition: all 0.3s ease;
-}
-
-.top-container .nav .nav-links a:hover{
-    color: #fff;
-}
-
-.top-container .nav .right-section{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.top-container .nav .right-section > i{
-    color: #f1f3f2;
-    background: #1e293b;
-    padding: 12px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.top-container .nav .right-section .profile{
-    display: flex;
-    align-items: center;
-    background: #1e293b;
-    padding: 0 10px;
-    border-radius: 50px;
-    gap: 10px;
-}
-
-.top-container .nav .right-section .profile .info{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.top-container .nav .right-section .profile .info img{
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    border: 1px solid #f1f3f2;
-}
-
-.top-container .nav .right-section .profile .info a{
-    font-size: 13px;
-}
-
-.top-container .nav .right-section .profile .info p{
-    font-size: 13px;
-    color: #ccc;
-}
-
-.top-container .nav .right-section .profile > i{
-    color: #f1f3f2;
-    font-size: 22px;
-    cursor: pointer;
-}
-
-.top-container .status{
-    padding: 20px 20px 10px;
-}
-
-.top-container .status .header{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.top-container .status .header h4{
-    color: #f1f3f2;
-    font-weight: 500;
-}
-
-.top-container .status .header h4#big{
-    flex: 3;
-}
-
-.top-container .status .header h4#small{
-    flex: 1;
-    padding-left: 90px;
-}
-
-.top-container .status .items-list{
-    display: flex;
-    align-items: center;
-    gap: 14px;
-}
-
-.top-container .status .items-list .item{
-    background: #e0f2fe;
-    width: 25%;
-    padding: 20px;
-    border-radius: 12px;
-}
-
-.top-container .status .items-list .item:nth-child(2){
-    background: #fffbeb;
-}
-
-.top-container .status .items-list .item:nth-child(3){
-    background: #bfdbfe;
-}
-
-.top-container .status .items-list .item:nth-child(4){
-    background: #031224;
-    padding: 10px;
-}
-
-.top-container .status .items-list .item .info{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-bottom: 40px;
-}
-
-.top-container .status .items-list .item .info h5{
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 10px;
-}
-
-.top-container .status .items-list .item .info p{
-    font-size: 12px;
-    font-weight: 500;
-}
-
-.top-container .status .items-list .item .info > i{
-    font-size: 20px;
-    padding: 10px;
-    background: #031224;
-    color: #f1f3f2;
-    border-radius: 50%;
-}
-
-.top-container .status .items-list .item .progress{
+.container{
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     position: relative;
-    height: 10px;
-    background: #b7c0cd;
-    border-radius: 10px;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
 }
 
-.top-container .status .items-list .item .progress .bar{
-    width: 92%;
-    height: 10px;
-    background: #031224;
-    border-radius: 10px;
-}
-
-.top-container .status .items-list .item .progress::before{
-    content: "92%";
-    position: absolute;
-    top: -40px;
-    right: 0;
-    font-size: 22px;
-    font-weight: 600;
-}
-
-.top-container .status .items-list .item:nth-child(2) .progress{
-    background: #d6d3d1;
-}
-
-.top-container .status .items-list .item:nth-child(2) .progress .bar{
-    width: 65%;
-}
-
-.top-container .status .items-list .item:nth-child(2) .progress::before{
-    content: "65%";
-}
-
-
-.top-container .status .items-list .item:nth-child(3) .progress{
-    background: #94a3b8;
-}
-
-.top-container .status .items-list .item:nth-child(3) .progress .bar{
-    width: 80%;
-}
-
-.top-container .status .items-list .item:nth-child(3) .progress::before{
-    content: "80%";
-}
-
-.bottom-container{
-    display: flex;
-    gap: 20px;
-    padding: 30px;
-}
-
-.bottom-container .prog-status,
-.bottom-container .popular,
-.bottom-container .upcoming{
-    background: #fefefe;
-    padding: 20px;
-    border-radius: 24px;
-}
-
-.bottom-container .prog-status{
-    width: 50%;
-}
-
-.bottom-container .prog-status .header,
-.bottom-container .popular .header,
-.bottom-container .upcoming .header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.bottom-container .prog-status .header h4,
-.bottom-container .popular .header h4,
-.bottom-container .upcoming .header h4{
-    font-weight: 600;
-}
-
-.bottom-container .prog-status .header .tabs{
-    background: #f3f3f3;
-    padding: 4px;
-    border-radius: 20px;
-    display: flex;
-    gap: 5px;
-}
-
-.bottom-container .prog-status .header .tabs a{
-    padding: 4px 20px;
-    font-size: 12px;
-    color: #000;
-    border-radius: 20px;
-    font-weight: 600;
-}
-
-.bottom-container .prog-status .header .tabs a.active{
-    background: #fff;
-}
-
-.bottom-container .prog-status .details{
-    display: flex;
-    margin-bottom: 30px;
-    gap: 20px;
-}
-
-.bottom-container .prog-status .details .item h2{
-    font-size: 30px;
-    font-weight: 400;
-}
-
-.bottom-container .prog-status .details .item p{
-    font-size: 13px;
-    color: #9b9b9b;
-}
-
-.bottom-container .prog-status .details .separator{
-    width: 2px;
-    height: 70px;
-    background: #f3f3f3;
-}
-
-.bottom-container .popular{
-    width: 25%;
-}
-
-.bottom-container .popular .header,
-.bottom-container .upcoming .header{
-    margin-bottom: 40px;
-}
-
-.bottom-container .popular .header a,
-.bottom-container .upcoming .header a{
-    font-size: 12px;
-    color: #000;
-    font-weight: 600;
-    padding: 4px 8px;
-    background: #f3f3f3;
-    border-radius: 20px;
-}
-
-.bottom-container .popular > img{
-    width: 100%;
-    aspect-ratio: 16/9;
-    border-radius: 20px;
-    margin-bottom: 20px;
-}
-
-.bottom-container .popular .audio{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.bottom-container .popular .audio i{
-    font-size: 26px;
-    background: #eff6ff;
-    padding: 6px;
-    border-radius: 50%;
-}
-
-.bottom-container .popular .audio a{
-    font-size: 15px;
-    font-weight: 600;
-    color: #000;
-    line-height: 18px;
-}
-
-.bottom-container .popular > p{
+.container p{
     font-size: 14px;
-    font-weight: 500;
-    margin-bottom: 50px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
 }
 
-.bottom-container .popular .listen{
+.container span{
+    font-size: 12px;
+}
+
+.container a{
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}
+
+.container button{
+    background-color: #050380;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.container button.hidden{
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.container form{
+    background-color: #fff;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
 }
 
-.bottom-container .popular .listen .author{
-    padding: 6px 10px;
-    background: #f3f3f3;
-    display: flex;
+.container input{
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+.form-container{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.sign-in{
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.container.active .sign-in{
+    transform: translateX(100%);
+}
+
+.sign-up{
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.container.active .sign-up{
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.6s;
+}
+
+@keyframes move{
+    0%, 49.99%{
+        opacity: 0;
+        z-index: 1;
+    }
+    50%, 100%{
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+.social-icons{
+    margin: 20px 0;
+}
+
+.social-icons a{
+    border: 1px solid #ccc;
+    border-radius: 20%;
+    display: inline-flex;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
-    border-radius: 10px;
-}
-
-.bottom-container .popular .listen .author img{
+    margin: 0 3px;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
 }
 
-.bottom-container .popular .listen .author a{
-    font-size: 14px;
-    color: #000;
+.toggle-container{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    border-radius: 150px 0 0 100px;
+    z-index: 1000;
 }
 
-.bottom-container .popular .listen .author p{
-    font-size: 12px;
-    color: #9b9b9b;
+.container.active .toggle-container{
+    transform: translateX(-100%);
+    border-radius: 0 150px 100px 0;
 }
 
-.bottom-container .popular .listen button{
-    border: none;
+.toggle{
+    background-color: #050380;
+    height: 100%;
+    background: linear-gradient(to right, #5c6bc0, #050380);
     color: #fff;
-    background: #031224;
-    padding: 6px 14px;
-    border-radius: 10px;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.container.active .toggle{
+    transform: translateX(50%);
+}
+
+.toggle-panel{
+    position: absolute;
+    width: 50%;
+    height: 100%;
     display: flex;
     align-items: center;
-    gap: 6px;
-    cursor: pointer;
-}
-
-.bottom-container .popular .listen button i{
-    font-size: 16px;
-}
-
-.bottom-container .upcoming{
-    width: 25%;
-}
-
-.bottom-container .upcoming .dates{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-}
-
-.bottom-container .upcoming .dates .item{
-    display: flex;
+    justify-content: center;
     flex-direction: column;
-    align-items: center;
-    gap: 6px;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
 }
 
-.bottom-container .upcoming .dates .item h5{
-    font-weight: 600;
+.toggle-left{
+    transform: translateX(-200%);
 }
 
-.bottom-container .upcoming .dates .item a{
-    color: #000;
-    font-size: 13px;
-    padding: 5px 9px;
-    border-radius: 50%;
-    font-weight: 600;
-    transition: all 0.3s ease;
+.container.active .toggle-left{
+    transform: translateX(0);
 }
 
-.bottom-container .upcoming .dates .item.active a,
-.bottom-container .upcoming .dates .item a:hover{
-    color: #fff;
-    background: #031224;
+.toggle-right{
+    right: 0;
+    transform: translateX(0);
 }
 
-.bottom-container .upcoming .events{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.bottom-container .upcoming .events .item{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #eff6ff;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.bottom-container .upcoming .events .item > i{
-    cursor: pointer;
-}
-
-.bottom-container .upcoming .events .item > div{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.bottom-container .upcoming .events .item > div i{
-    font-size: 30px;
-}
-
-.bottom-container .upcoming .events .item .event-info a{
-    font-size: 14px;
-    color: #000;
-    font-weight: 500;
-}
-
-.bottom-container .upcoming .events .item .event-info p{
-    font-size: 13px;
-    color: #9b9b9b;
-}
-
-@media screen and (max-width: 1300px) {
-    
-    .bottom-container .popular .audio a{
-        margin-bottom: 20px;
-        font-size: 12px;
-    }
-
-    .bottom-container .popular > p{
-        margin-bottom: 20px;
-        font-size: 12px;
-    }
-
-    .bottom-container .popular .listen{
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .bottom-container .popular .listen .author{
-        width: 100%;
-    }
-
-    .bottom-container .popular .listen button{
-        width: 100%;
-        justify-content: center;
-    }
-
-    .bottom-container .upcoming .events .item{
-        padding: 6px 10px;
-    }
-
-    .bottom-container .upcoming .events .item > div i{
-        font-size: 20px;
-    }
-
-    .bottom-container .upcoming .events .item .event-info a{
-        font-size: 13px;
-    }
-
-    .bottom-container .upcoming .events .item .event-info p{
-        font-size: 12px;
-    }
-
-}
-
-@media screen and (max-width: 1080px) {
-    
-    .top-container .nav .right-section .profile{
-        padding: 5px;
-    }
-
-    .top-container .nav .right-section .profile .info p,
-    .top-container .status .header h4#small{
-        display: none;
-    }
-
-    .top-container .status .items-list{
-        flex-wrap: wrap;
-    }
-
-    .top-container .status .items-list .item{
-        width: 48%;
-    }
-
-    .bottom-container{
-        flex-wrap: wrap;
-    }
-
-    .bottom-container .prog-status{
-        width: 100%;
-    }
-
-    .bottom-container .popular,
-    .bottom-container .upcoming{
-        width: 48%;
-    }
-
-    .bottom-container .popular .audio a{
-        font-size: 15px;
-    }
-
-    .bottom-container .popular > p{
-        font-size: 14px;
-        margin-bottom: 40px;
-    }
-
-    .bottom-container .popular .listen{
-        flex-direction: row;
-    }
-
-    .bottom-container .popular .listen button{
-        width: 50%;
-    }
-
-    .bottom-container .upcoming .events .item{
-        padding: 10px;
-    }
-
-    .bottom-container .upcoming .events .item > div i{
-        font-size: 30px;
-    }
-
-    .bottom-container .upcoming .events .item .event-info a{
-        font-size: 14px;
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-    
-    .top-container .nav{
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .top-container .status .items-list .item .info h5{
-        font-size: 15px;
-    }
-
-    .bottom-container .popular,
-    .bottom-container .upcoming{
-        width: 100%;
-    }
-
+.container.active .toggle-right{
+    transform: translateX(200%);
 }
     </style>
-    <script>
-        const ctx = document.querySelector('.activity-chart');
-const ctx2 = document.querySelector('.prog-chart');
-
-new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: ['S', 'T', 'Q', 'Q', 'S', 'S', 'D'],
-        datasets: [{
-            label: 'Time',
-            data: [8, 6, 7, 6, 10, 8, 4],
-            backgroundColor: '#1e293b',
-            borderWidth: 3,
-            borderRadius: 6,
-            hoverBackgroundColor: '#60a5fa'
-        }]
-    },
-    options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        scales: {
-            x: {
-                border: {
-                    display: true
-                },
-                grid: {
-                    display: true,
-                    color: '#1e293b'
-                }
-            },
-            y: {
-                ticks: {
-                    display: false
-                }
-            }
-        },
-        plugins: {
-            legend: {
-                display: false
-            }
-        },
-        animation: {
-            duration: 1000,
-            easing: 'easeInOutQuad',
-        }
-    }
-});
-
-new Chart(ctx2, {
-    type: 'line',
-    data: {
-        labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul'],
-        datasets: [{
-            label: 'Class GPA',
-            data: [6, 10, 8, 14, 6, 7, 4],
-            borderColor: '#0891b2',
-            tension: 0.4
-        },
-        {
-            label: 'Aver GPA',
-            data: [8, 6, 7, 6, 11, 8, 10],
-            borderColor: '#ca8a04',
-            tension: 0.4
-        }
-        ]
-    },
-    options: {
-        responsive: true,
-        maintainAspectRatio: true,
-        scales: {
-            x: {
-                grid: {
-                    display: false,
-                }
-            },
-            y: {
-                ticks: {
-                    display: false
-                },
-                border: {
-                    display: false,
-                    dash: [5, 5]
-                }
-            }
-        },
-        plugins: {
-            legend: {
-                display: false
-            }
-        },
-        animation: {
-            duration: 1000,
-            easing: 'easeInOutQuad',
-        }
-    }
-});
-    </script>
 </body>
 
 </html>
